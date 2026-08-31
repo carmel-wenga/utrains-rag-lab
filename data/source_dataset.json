@@ -1,0 +1,472 @@
+{
+    "questions": [
+        {
+            "q": "How to login to my account?",
+            "a" : "step 1: At the top of the page, click on the “Login” button. step 2: Fill in your email and your password. (Note: The email should be the one you used to enroll to the course)"
+        },
+        {
+            "q": "Is coding experience required?",
+            "a" : "No, we start with programming basics and gradually move to scripting and automation, so beginners are welcome."
+        },
+        {
+            "q": "Are there any prerequisites for enrolling in this course?",
+            "a" : "No specific prerequisites, but familiarity with basic computer operations is helpful."
+        },
+        {
+            "q": "What is Infrastructure as Code (IaC), and why is it important?",
+            "a" : "IaC is the practice of managing and provisioning infrastructure using code. It ensures consistency, reduces manual effort, and improves version control."
+        },
+        {
+            "q": "How many students are there in each batch?",
+            "a" : "We keep class sizes small to ensure personalized attention and effective learning."
+        },
+        {
+            "q": "Will I learn about cloud cost management?",
+            "a" : "Yes, we cover cloud cost optimization strategies, including resource management, pricing models, and budgeting."
+        },
+        {
+            "q": "I registered for the next session, but I don't see it in my account. Please can you help?",
+            "a" : "I can certainly understand your concern when the session isn't appearing in your account. Don't worry, we'll get this sorted out for you. An agent needs to securely access your account. I'm connecting you to a member of our support team now who can help. Please hold on for a moment."
+        },
+        {
+            "q": "Do you provide job search assistance?",
+            "a" : "Yes, we offer job search assistance, resume building, and interview preparation sessions. Additionally, we offer a dedicated course on job search strategies and resume building to support your career transition further."
+        },
+        {
+            "q": "What are the key benefits of learning Terraform in this course?",
+            "a" : "Terraform enables you to automate infrastructure deployment and management, making it a valuable skill for cloud and DevOps roles."
+        },
+        {
+            "q": "How to check my payment history and details?",
+            "a" : "step 1: Login to your account, you will land on your student Dashboard step 2: In the left panel under the 'PAYMENTS' section, click on 'Payment History' step 3: You will be redirected to the billing space where you can see your payment history"
+        },
+        {
+            "q": "How much time do I need to dedicate each week?",
+            "a" : "You should expect to spend around 4-6 hours per week, including class time and hands-on practice."
+        },
+        {
+            "q": "I have no computer knowledge. Can I still take this course?",
+            "a" : "Yes! No prior computer knowledge is required. In just 6 months, we will take you from a beginner to an expert in the skills we teach. Many of our successful students came from various non-technical professions."
+        },
+        {
+            "q": "How to join the live class?",
+            "a" : "step 1: Login to your account, you will land on your student Dashboard - step 2: Click on My sessions in the left panel"
+        },
+        {
+            "q": "Do I need access to an AWS account?",
+            "a" : "Yes, you’ll need an AWS account to practice. We guide you on how to set up a free-tier account for the course."
+        },
+        {
+            "q": "How can I showcase my skills to potential employers?",
+            "a" : "You’ll work on hands-on projects that you can include in your portfolio, and we also provide guidance on creating a compelling resume and LinkedIn profile."
+        },
+        {
+            "q": "Who are the instructors, and what makes them qualified to teach DevOps?",
+            "a" : "The lead instructor and founder is Serge Kamgang, a Senior DevOps Engineer with over 10 years of real-world experience working with major US companies. He transitioned from a non-IT background to a six-figure IT career and has since successfully trained thousands to become qualified DevOps engineers."
+        },
+        {
+            "q": "Do I need a powerful computer to run the course labs?",
+            "a" : "No, a standard computer with internet access is sufficient. Most labs are conducted on cloud-based environments. For windows we recommend systems that meet or exceed the following specifications. Processor (CPU): Intel Core i5 (fifth generation or newer) or equivalent Operating System: Microsoft Windows 10 and up Memory: 8 GB RAM, Storage: 200 GB, internal storage drive, Network Adapter: 802.11ac 2.4/5 GHz wireless adapter, Other: Internal or external Webcam, lock, carrying case. For Apple’s MacOS if you must use a Mac or already have a Mac use a Mac OS X. Processor (CPU): Intel Core i5 (fifth generation or newer) or equivalent, Operating System: Mac OS 10.14 (Mojave), Memory: 8 GB RAM, Storage: 256 GB internal hard drive, Network Adapter: AirPort Extreme card, network interface card, For a better experience in class, you may want to take an extra monitor."
+        },
+        {
+            "q": "Do you cover best practices for cloud architecture?",
+            "a" : "Yes, we cover AWS best practices for security, cost optimization, and scalability when designing cloud architectures."
+        },
+        {
+            "q": "How are labs and assignments graded?",
+            "a" : "Labs and assignments are graded based on functionality, code quality, and adherence to best practices."
+        },
+        {
+            "q": "How to change my payment method?",
+            "a" : "step 1: Login to your account, you will land on your student Dashboard step 2: In the left panel under the 'PAYMENTS' section, click on 'Payment Method' step 3: You will be redirected to the billing space.  Step 4: Under the Card Details tab, enter your card information and click on update"
+        },
+        {
+            "q": "Please can you cancel my subscription and refund me? What is the refund policy?",
+            "a" : "While I can't cancel and make a refund myself, I will make sure our support team helps you with this. Please hold on for a moment."
+        },
+        {
+            "q": "What if I get stuck on a topic?",
+            "a" : "If you find yourself stuck on a topic, we offer several support options. You can get help in our Discord community, use the live chat feature, or submit a ticket for assistance. Additionally, a one-on-one session can be scheduled to help resolve your specific issue. We're here to ensure you get the support you need!"
+        },
+        {
+            "q": "I don’t live in the USA. Can I still take the course?",
+            "a" : "Yes! The course is entirely online, so you can attend from anywhere in the world."
+        },
+        {
+            "q": "I need to access confluence page.",
+            "a" : "We no longer use Confluence for documentation. All materials have been migrated to Google Docs and can be accessed through the class materials."
+        },
+        {
+            "q": "Is there a project management aspect in the course?",
+            "a" : "Yes, we cover project management concepts like Agile methodology, sprint planning, and task tracking using tools like Jira."
+        },
+        {
+            "q": "Can I switch to a different course module if I find one too ",
+            "a" : "No, the course is not self-paced. The content and materials are uploaded weekly as we progress through the course, so you cannot switch between modules except for those we have already covered in the sessions. However, you can request access to previous sessions to review advanced materials."
+        },
+        {
+            "q": "How is the Utrains method different from a traditional college degree? How can it prepare me so quickly?",
+            "a" : "Utrains employs an accelerated, practical 6-month method focused entirely on job-readiness. Unlike longer traditional paths, it emphasizes hands-on labs, real-world projects, live instruction, and dedicated interview preparation to equip you with the specific skills employers seek."
+        },
+        {
+            "q": "Will you teach networking concepts in the course?",
+            "a" : "Yes, we cover basic networking, IP addressing, subnets, and more in the Linux and AWS sections."
+        },
+        {
+            "q": "What type of database technologies will I learn?",
+            "a" : "We cover relational databases like MySQL and cloud-native databases such as Amazon RDS,PostgreSQL and MongoDB DynamoDB."
+        },
+        {
+            "q": "Can I take a break in the middle of the course?",
+            "a" : "Yes, you can pause your course and resume in the next session, subject to availability."
+        },
+        {
+            "q": "How is DevOps integrated into the course?",
+            "a" : "We cover CI/CD, infrastructure as code (IaC) with Terraform and Ansible, Docker, Kubernetes, and monitoring tools like Prometheus and Grafana, all while emphasizing automation and collaboration."
+        },
+        {
+            "q": "Is there a focus on specific AWS certifications in the course?",
+            "a" : "While we cover AWS concepts, the course is not tailored to a specific certification, but it does prepare you for exams like AWS Solutions Architect."
+        },
+        {
+            "q": "I am a student. Just wondering why I am never able to login to Utrains site using my iPad.",
+            "a" : "If you are having trouble logging in on your iPad, please follow these steps: Step 1: Open a browser on your iPad (Safari, Chrome, etc.). Step 2: Enter the URL utrains.org in the address bar. Step 3: Tap “Go” or “Enter” to access the site. Step 4: Navigate to your dashboard or desired page. If you still cannot access the site after following these steps, I will transfer your chat to a member of our support team who will assist you further."
+        },
+        {
+            "q": "Can I use a Mac for the course?",
+            "a" : "Yes, you can use a Mac, Windows, or Linux machine for the course. All tools and environments are compatible with multiple platforms"
+        },
+        {
+            "q": "What is the deadline to register for the next session?",
+            "a" : "We have a flexible registration period! You can enroll up to 2-3 weeks after classes start and still have plenty of time to catch up. The final deadline to register is at the end of the third week, as enrollment closes after that point."
+        },
+        {
+            "q": "Is this course suitable for non-technical professionals?",
+            "a" : "Definitely! We build up from the basics and ensure all learners can follow along. We have successfully trained several non-technical professionals, including individuals from backgrounds such as marketing, project management, and customer support, helping them transition into tech roles with confidence"
+        },
+        {
+            "q": "What does the AWS Cloud part of the course entail?",
+            "a" : "The AWS Cloud part includes topics like EC2, S3, IAM, RDS, VPC, Lambda, CloudFormation, and more, focusing on cloud architecture, deployment, and management."
+        },
+        {
+            "q": "What kind of support do I receive during the course?",
+            "a" : "You will have access to troubleshooting rooms to assist you during class time.  You will also get help in our Discord community, use the live chat feature, or submit a ticket for assistance. Additionally, a one-on-one session can be scheduled to help resolve your specific issue. We're here to ensure you get the support you need!"
+        },
+        {
+            "q": " Why should I take this training?",
+            "a" : "COVID-19 has shown that remote work is viable, and more companies are migrating to the cloud. This has increased the demand for IT professionals like DevOps Engineers, Cloud Engineers, and more. Taking this course will: Prepare you for a high-demand, well-paid job market. Help you create your own business. Provide financial independence. Improve your family's financial standing."
+        },
+        {
+            "q": "Do I need to know any programming language before joining?",
+            "a" : "No, we start from the basics of Python and introduce scripting progressively."
+        },
+        {
+            "q": "Since the courses are live, are the class materials provided in advance of the live events?",
+            "a" : "Yes, class materials are provided two weeks before the instructor's live session. This allows you to prepare ahead for all the lessons in the course."
+        },
+        {
+            "q": "Is there a capstone project?",
+            "a" : "Yes, there’s a capstone project that involves creating a 3-tier web application in AWS, deploying it using CI/CD pipelines, and monitoring it using Prometheus and Grafana."
+        },
+        {
+            "q": "Is the course content updated regularly?",
+            "a" : "Yes, we keep our course content up-to-date with the latest industry trends and tools."
+        },
+        {
+            "q": "I'm 60 years old or above and interested in pursuing an IT course. Is it too late for me to start learning about technology?",
+            "a" : "It's never too late to start learning about technology! Many individuals in their 60s and beyond successfully pursue IT courses and careers. Our courses are designed to be accessible and engaging, regardless of age. Embracing new skills can be incredibly rewarding, and your life experience can bring a valuable perspective to the learning process."
+        },
+        {
+            "q": "Besides my laptop, do I need anything extra to get ready for this upcoming session?",
+            "a" : "You’ll need a stable internet connection and your laptop. For better comfort and productivity, we recommend having an extra screen. Also, make sure you have installed and tested Zoom before the session starts. A quiet, well-lit workspace is also helpful."
+        },
+        {
+            "q": "How to setup my computer?",
+            "a" : "step 1: Login to your account , you will land on the student Dashboard - step 2: Click on the course you are enrolled to - Step 3: Click on the first section of the course (INTRODUCTION AND COMPUTER SETUP) - step 4: Click on the Lesson COMPUTER SETUP then go through the various topics (videos, slides etc) to setup your computer."
+        },
+        {
+            "q": "What is the free webinar or masterclass intended for? How can I join the free webinar or masterclass?",
+            "a" : "The objective of the webinar is to provide participants with a comprehensive understanding of the course content. It will facilitate answering fundamental questions such as: what is DevOps, and why is it highly sought after in the contemporary Information Technology industry? Additionally, it addresses the typical earnings of a DevOps Engineer. The webinar further offers an in-depth overview of Utrains' systematic approach to guiding individuals from novice to proficient DevOps and Cloud Engineers. Interested parties are invited to attend our complimentary webinar by registering at https://webinar.utrains.org."
+        },
+        {
+            "q": "What kind of hands-on labs are included?",
+            "a" : "Labs include setting up Linux environments, creating AWS architectures, building CI/CD pipelines, and deploying containerized applications."
+        },
+        {
+            "q": "How do I stay updated with new course materials?",
+            "a" : "We send notifications for any updates via the discord channel and mails, and you can access new materials directly from our learning platform."
+        },
+        {
+            "q": "Why are DevOps jobs so well-paid? Is there really that much demand?",
+            "a" : "DevOps professionals are crucial for modern businesses. They ensure applications and systems run reliably 24/7, manage code deployments efficiently, and help companies innovate faster, delivering significant value. This high value translates into high demand and competitive salaries."
+        },
+        {
+            "q": "What makes this course different from other online courses?",
+            "a" : "Our course emphasizes hands-on practice, real-world projects, and personalized support to ensure you’re job-ready."
+        },
+        {
+            "q": "How to access my course?",
+            "a" : "step 1: Login to your account, you will land on the student Dashboard - step 2: You have two options: - Option 1: You can directly see the courses you are enrolled to, click on the course you want to open - Option 2: Click on My courses in the left panel, then select the course you want to open"
+        },
+        {
+            "q": "How long is the training program?",
+            "a" : "The course spans 06 months (24 weeks), with 2 sessions per week, each lasting about 3 hours and 30 minutes. We have two types of sessions: - Weekday Sessions: Mondays and Tuesdays, 6:30 PM to 10:00 PM EST. - Weekend Sessions: Saturdays, 10:00 AM to 1:30 PM, and Sundays, 3:00 PM to 6:30 PM EST."
+        },
+        {
+            "q": "What topics are covered in the Linux section of the course?",
+            "a" : "The Linux section covers system administration, command-line basics, file management, permissions, process management, networking, and shell scripting."
+        },
+        {
+            "q": "What should I do next after registering for the course?",
+            "a" : "Before the class starts, you need to set up your computer using the instructions given in the computer setup lesson for Windows and Mac computers. How to get to that lesson: Step 1: Log in to your account. You will land on the student Dashboard - Step 2: Click on the course you are enrolled in - Step 3: Click on the first section of the course (INTRODUCTION AND COMPUTER SETUP) - Step 4: Click on the Lesson COMPUTER SETUP, then go through the various topics (videos, slides, etc) to set up your computer. Always feel free to let us know through a ticket if you have any other issues or concerns."
+        },
+        {
+            "q": "Who is Serge Kamgang and what makes him qualified to teach DevOps and Cloud Engineering?",
+            "a" : "Serge Kamgang is a Senior DevOps Engineer with over 10 years of experience. He founded Utrains to help others succeed in IT, having transformed his own life through similar training. You can watch his story on our YouTube channel for more details. Join our community and start your journey to a rewarding career."
+        },
+        {
+            "q": "Do I need a background in IT to take this course?",
+            "a" : "No prior IT background is required. We start from the basics and gradually build up to advanced concepts."
+        },
+        {
+            "q": "How to make a payment before or after the next auto renewal ?",
+            "a" : "Step 1: Log in to your account. You will land on your student Dashboard - Step 2: In the left panel under the 'PAYMENTS' section, click on 'Make a Payment' - Step 3: Choose the session for which you want to make a payment,"
+        },
+        {
+            "q": "Is there a focus on soft skills like communication and teamwork?",
+            "a" : "No specific prerequisites, but familiarity with basic computer operations is helpful."
+        },
+        {
+            "q": "Will there be quizzes or assessments during the course?",
+            "a" : "Yes, there will be quizzes and practical assessments to help reinforce your learning and track your progress."
+        },
+        {
+            "q": "Can I access the course content on my phone or tablet?",
+            "a" : "Yes, the course materials are accessible through our online platform at utrains.org, which is compatible with both mobile and desktop devices. You can easily access all the resources you need from anywhere!"
+        },
+        {
+            "q": "What are the Python topics cover in this program?",
+            "a" : "We cover Python fundamentals, scripting, and automation with libraries like Boto3 for AWS interaction, as well as using Python for data parsing and system operations."
+        },
+        {
+            "q": "Can I re-enroll in the next session when my initial session closes? Will there be any extra charges?",
+            "a" : "Yes, you can absolutely re-enroll, and there are no extra charges to do so. We'd love to have you continue with us! When you are ready to join the next session, please let us know, and we will take care of it."
+        },
+        {
+            "q": "What is the cost of the course?",
+            "a" : "The training fee is $3500, but we offer three payment plans for your convenience: Full Payment: $3000 (a $500 discount) - 3 Installment Plan: $1100 per month for 3 months (a $200 discount) - 6 Installment Plan: $584 per month for 6 months - Choose the plan that best fits your budget!"
+        },
+        {
+            "q": "How can I overcome my fear of math-related topics?",
+            "a" : "Focus on understanding the logic behind the concepts. We’ll provide clear explanations, and our instructors are here to support you every step of the way."
+        },
+        {
+            "q": "Can I take just the DevOps program since I already have knowledge of Linux?",
+            "a" : "Our course is structured to link Linux to AWS and DevOps, providing a comprehensive understanding of the entire workflow. This approach ensures you grasp the connections between these technologies, enhancing your learning experience. However, if you're primarily interested in just the DevOps program, you can certainly choose to wait for or attend that course specifically"
+        },
+        {
+            "q": "What tools are covered in the DevOps section of the course?",
+            "a" : "We cover Jenkins, Git, GitHub, Docker, Kubernetes, Terraform, Ansible, and more."
+        },
+        {
+            "q": "I find technical terms and coding really intimidating. Will I be able to keep up?",
+            "a" : "Yes. The program is structured to make technology accessible. It uses comprehensive materials that explain concepts gradually and demystify tech language, helping you manage even if you feel overwhelmed now."
+        },
+        {
+            "q": "Do I need prior cloud experience to join this course?",
+            "a" : "No cloud experience is required. We cover cloud concepts and AWS services from scratch."
+        },
+        {
+            "q": "Do I need to purchase any licenses for the tools used in the course?",
+            "a" : "No, all the tools utilized in the course are either open-source or offer free tiers that are suitable for learning. However, please note that you will need a credit card to create your AWS account, even though the AWS Free Tier allows you to access many resources at no cost."
+        },
+        {
+            "q": "What software or tools do I need to install before the course starts?",
+            "a" : "Before the course begins, you will need to install the following software: Visual Studio Code: A versatile code editor for writing and editing code. AnyDesk: A remote desktop application for accessing your computer from anywhere. Discord: A communication platform for interacting with your peers and instructors. AWS Free Tier Account: Create an account on Amazon Web Services to access cloud resources at no cost."
+        },
+        {
+            "q": "Do I need to be good at math to succeed in this course?",
+            "a" : "Not at all! The course focuses on practical skills like scripting, configuration, and cloud management, and does not require advanced math skills."
+        },
+        {
+            "q": "Are the course materials downloadable?",
+            "a" : "Yes, you can download presentations, lab guides, and other resources for offline use."
+        },
+        {
+            "q": "Do you offer any scholarships or discounts?",
+            "a" : "While we do not offer scholarships, we occasionally provide discounts for participants in our free online masterclasses or webinars. This is a great opportunity to save while enhancing your learning experience!"
+        },
+        {
+            "q": "Will I learn about container orchestration in the course?",
+            "a" : "Yes, we cover container orchestration using Kubernetes, including topics like deployments, services, and monitoring."
+        },
+        {
+            "q": "Is it really possible to earn a six-figure salary after this training, especially if I'm new to IT?",
+            "a" : "Absolutely! This program is designed for individuals from all backgrounds, including those with no prior IT knowledge or degree. Utrains takes students from various levels and transforms them into job-ready IT professionals within approximately 6 months."
+        },
+        {
+            "q": "I struggled with math in school—can I still do well in this course?",
+            "a" : "Absolutely! The course is designed to be accessible to all learners, regardless of their math background."
+        },
+        {
+            "q": "Is the course self-paced or instructor-led?",
+            "a" : "The course is instructor-led, but we provide recordings and materials so that you can review content at your own pace."
+        },
+        {
+            "q": "If I take the course, can I find a job in Linux administration?",
+            "a" : "Yes, there are many job opportunities available in Linux administration! Organizations across various industries rely on Linux servers and systems, creating high demand for skilled professionals. By completing a course in Linux administration, you'll gain the necessary skills and knowledge to pursue roles such as System Administrator, Network Administrator, Linux Support Engineer and more."
+        },
+        {
+            "q": "Is the course content accessible for people with disabilities?",
+            "a" : "Yes, our course materials are designed to be accessible, and we provide accommodations as needed."
+        },
+        {
+            "q": "Will there be any complex calculations or formulas in the course?",
+            "a" : "No, the emphasis is on problem-solving and understanding the technology rather than math."
+        },
+        {
+            "q": "Does DevOps or cloud computing require math skills?",
+            "a" : "Not really. It’s more about understanding tools, processes, and automation rather than complex calculations."
+        },
+        {
+            "q": "How to submit a ticket?",
+            "a" : "step 1: Login to your account, you will land on your student Dashboard. step 2: Click on Submit a ticket in the left panel under the SUPPORT section. step 3: Fill in the form with accurate information. You could include screenshots to help our team understand the issue you are facing. Step 4: Submit the form and watch out in your emails because to reply will come via mails."
+        },
+        {
+            "q": "What’s the difference between DevOps and DevSecOps?",
+            "a" : "DevOps focuses on automation and collaboration between development and operations. DevSecOps integrates security into the DevOps process, ensuring that security is considered at every stage of development."
+        },
+        {
+            "q": "What salary can I expect after completing this course?",
+            "a" : "While salaries vary, our top students typically start with annual salaries between $80,000 and $220,000."
+        },
+        {
+            "q": "Where will I work after this training?",
+            "a" : "With the skills acquired, you can work for major companies like AWS, Google, Accenture, Microsoft, or IT departments of various sectors like: Banks: JP Morgan, Wells Fargo, Bank of America. E-commerce: Amazon, Walmart, eBay. Private sectors: Boeing, Coca-Cola, Accenture. Restaurants: McDonalds, Chipotle. Brand Designers: Nike, Puma, Adidas."
+        },
+        {
+            "q": "Do you offer any introductory sessions before the course",
+            "a" : "Yes, we provide a DevOps masterclass session prior to the start of the actual course. This allows you to experience the course structure and teaching style firsthand!"
+        },
+        {
+            "q": "Can I pay in installments? What subscription or installment plans do you offer?",
+            "a" : "Yes, we offer flexible payment options, including the ability to pay in monthly installments. * The Pay In Full plan: You pay $3000 in a one-time payment. This enables you to save $500. * The 3 installment plan: This plan enables you to save $200. You pay a total of $3300 in three installments of $1100 per month for the first three months. * The 6 installment plan:  You pay a total of $3504 in 6 six. This is $584 per month"
+        },
+        {
+            "q": "How can I catch up on material if I miss a live class or am unable to attend due to an emergency?",
+            "a" : "All live classes are recorded and uploaded to your account, allowing you to access them at your convenience."
+        },
+        {
+            "q": "What career paths can I pursue after completing this course?",
+            "a" : "This course opens up paths in DevOps Engineering, Cloud Architecture, Site Reliability Engineering, System Administration, and more."
+        },
+        {
+            "q": "How to access my session?",
+            "a" : "step 1: Log in to your account by clicking on the “Log in” button at the top of the page, you will land on your student Dashboard step 2: Click on My sessions in the left panel - Step 3: In the main panel click on the session you want to open - step 4: You will find various information like: * The course description, * The link to join the live class * The link to join the troubleshooting room during class, And more"
+        },
+        {
+            "q": "What projects will we work on?",
+            "a" : "You’ll work on setting up Linux servers, creating AWS environments, building CI/CD pipelines, deploying containerized applications, and automating infrastructure with Terraform."
+        },
+        {
+            "q": "When does the next session start?",
+            "a" : "The next DevOps & Cloud Engineer session starts on October 10, 2026, and will run until April 10, 2027. Here is the weekly schedule: Saturdays 10:00 AM - 1:30 PM & Sundays: 3:00 PM – 6:30 PM (Eastern Time)."
+        },
+        {
+            "q": "How to enroll/subscribe/pay the training?",
+            "a" : "[EXACT]To enroll in the training, visit our website's homepage and scroll down to the section titled 'Ready to Join Our Next Class?'. There, click the 'Enroll Now' button, choose your preferred payment plan, and proceed to the checkout to complete your enrollment."
+        },
+        {
+            "q": "Will I get a certificate after completion? Does Utrains provide certificate of completion after the program?",
+            "a" : "We understand that certification can be important, but instead of offering certificates after training, we emphasize providing valuable job experience. We genuinely care about your success and are here to support you in building an attractive resume and preparing for interviews. However, we offer free certification preparation courses. This will allow you to obtain professional certifications in line with the skills acquired during this training."
+        },
+        {
+            "q": "Do your students get jobs after the program?",
+            "a" : "Yes! Numerous of our students land six-figure jobs before and after the end of the training program. We provide testimonials and success stories from our alumni. For more about our alumni success stories, please check our testimonial page at https://utrains.org/testimonials and our YouTube channel. Graduates can expect to work for major companies like AWS, Google, Accenture, Microsoft, or in IT departments of various sectors. Top students typically start with annual salaries between $80,000 and $220,000. Job search assistance, including resume writing and interview coaching, is provided."
+        },
+        {
+            "q": "What tools and technologies will I learn if I register to this DevOps & Cloud Engineering program?",
+            "a" : "The curriculum covers a wide range of essential, job-relevant tools and technologies, including Linux, Python scripting, Cloud platforms (AWS), containerization (Docker, Kubernetes), CI/CD tools (Jenkins, Circle CI, GitHub Action), Infrastructure as Code (Terraform), configuration management (Ansible), version control (Git), and monitoring tools (Prometheus)."
+        },
+        {
+            "q": "What if I’m already working in IT will this course still be beneficial?",
+            "a" : "Yes! You’ll gain advanced skills in DevOps, cloud computing, and automation, which are essential for career advancement."
+        },
+        {
+            "q": "Will I have access to the course content after it ends?",
+            "a" : "Yes, you’ll have lifetime access to all course materials, including recordings and resources."
+        },
+        {
+            "q": "How to contact utrains?",
+            "a" : "You can reach Utrains at +1 (302) 689 3440 or email mailto: contact@utrains.org . You can also use our contact page on the website."
+        },
+        {
+            "q": "Are there additional costs for certification exams?",
+            "a" : "Certification exams are separate from the course, but we provide resources to prepare you for exams like the Terraform CKA and Redhat."
+        },
+        {
+            "q": "What is the role of CI/CD in DevOps?",
+            "a" : "CI/CD automates the process of integrating code changes, testing, and deploying them, making software delivery faster and more reliable."
+        },
+        {
+            "q": "Will I learn about cloud-native development?",
+            "a" : "Yes, we cover cloud-native development practices, focusing specifically on serverless architectures and microservices using AWS services such as AWS Lambda, API Gateway, and Amazon DynamoDB."
+        },
+        {
+            "q": "Is the course content updated regularly?",
+            "a" : "Yes, we keep our course content up-to-date with the latest industry trends and tools."
+        },
+        {
+            "q": "How to submit my background check?",
+            "a" : "step 1: Login to your account, and you will land on your student Dashboard step 2: In the left panel under the 'SUPPORT' section, click on 'Background check.' step 3: Fill in the form with your personal information and click on next Step 4: Fill in the next form to provide your employment information Step 5: Submit the form and pay attention to your emails, as the answer will come by mail"
+        },
+        {
+            "q": "Please where can i get access to code share?",
+            "a" : "Sorry, codeshare's notes are not accessibles anymore."
+        },
+        {
+            "q": "What will I learn in this program? What are the main or covers topics tought in this program?",
+            "a" : "The training curriculum covers the following main topics: 1. Computer Fundamentals, 2. Linux Operating Systems, 3. DevOps Tools (Git, Jenkins, Docker, Kubernetes, Ansible, Terraform), 4. Cloud Computing (AWS), 5. Hands-on Enterprise Projects, 6. Resume Writing and Interview Preparation"
+        },
+        {
+            "q": "Do you provide vouchers to write official certificates like AWS , Kubernetes, or any other ?",
+            "a" : "At the moment, we do not provide vouchers for official certification exams like AWS or Kubernetes. However, we do offer free training courses designed to help you prepare for these certifications. These courses cover key concepts, practical skills, and exam-focused content to support your success."
+        },
+        {
+            "q": "Tell me more about this training program",
+            "a" : "This training program aims to prepare individuals for high-demand, well-paying jobs in IT, particularly in roles like DevOps Engineer and Cloud Engineer. It also helps participants achieve financial independence and improve their family's financial standing."
+        },
+        {
+            "q": "I have a full-time job and family commitments. How could I possibly fit this training into my busy schedule?",
+            "a" : "The program is designed with flexibility in mind, allowing you to learn at a pace that accommodates your existing responsibilities. You can effectively balance your professional development with your personal life."
+        },
+        {
+	    "q": "Is it still possible to enroll in the LLMOps Course?",
+	    "a": "No, enrollment for the current LLMOps for DevOps, Cloud, SRE, and DevSecOps Engineers track (running from August 13, 2026, to October 9, 2026) is officially closed."
+	},
+	{
+		"q": "Do I need a machine learning background for the LLMOps course?",
+		"a": "No. This program is explicitly designed for DevOps engineers. You will not be training models, doing transformer math, or writing PyTorch/TensorFlow programs. The focus is entirely on deploying, operating, monitoring, and securing AI Applications — skills that directly build on what you already know."
+	    },
+	    {
+		"q": "What cloud platform does the LLMOps course use?",
+		"a": "The core stack is AWS Bedrock, which maps directly to the AWS skills most DevOps engineers already have."
+	    },
+	    {
+		"q": "How much time per week does the LLMOps course require?",
+		"a": "Approximately 8 hours per week over 8 weeks. The format is 100% hands-on and project-based — no passive lectures. You'll be building and shipping real components from day one."
+	    },
+	    {
+		"q": "What will I have built by the end of the LLMOps course?",
+		"a": "A production-ready AI application you can discuss in interviews and showcase in your portfolio. This includes a secured LLM API integration, a RAG pipeline with a vector database backend, CI/CD deployment with evaluation gates, and a monitoring dashboard with cost alarms."
+	    },
+	    {
+		"q": "Is the LLMOps track available to people who haven't done Utrains' main DevOps program?",
+		"a": "Yes — this track is open to any experienced DevOps engineer, regardless of where you trained. The prerequisite is a solid working knowledge of CI/CD, cloud infrastructure (preferably AWS), and containers."
+	    },
+	    {
+		"q": "Why is the cohort size limited for the LLMOps course?",
+		"a": "This is the first cohort of a new intensive program. We're keeping seats limited to maintain quality, ensure direct instructor access, and gather feedback that will shape future iterations. Once spots are filled, they're gone."
+	    }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+  "questions": [
+    {
+      "q": "What is the duration of the DevOps training program?",
+      "a": "The DevOps training program lasts for 12 weeks and includes hands-on labs, CI/CD pipelines, and cloud deployment exercises."
+    },
+    {
+      "q": "Do you offer weekend classes for the Data Science bootcamp?",
+      "a": "Yes, the Data Science bootcamp is available in both weekday and weekend schedules depending on the cohort timing."
+    },
+    {
+      "q": "How do I reset my learner account password?",
+      "a": "To reset your learner account password, click the 'Forgot Password' link on the login page and follow the email reset instructions."
+    },
+    {
+      "q": "Is the AWS Cloud Practitioner course beginner-friendly?",
+      "a": "Yes, the AWS Cloud Practitioner course is designed for beginners and focuses on basic cloud concepts before moving to more advanced services."
+    },
+    {
+      "q": "What certificate do students receive after completing the AI Engineer program?",
+      "a": "Students receive a UTrains completion certificate and can also earn recognized platform badges for project work and assessments."
+    },
+    {
+      "q": "Can I access course recordings after finishing a cohort?",
+      "a": "Yes, learners typically retain access to recorded lessons and lab material for a limited time after the program ends, depending on the enrollment plan."
+    },
+    {
+      "q": "What support do I get during the Python for Automation track?",
+      "a": "Students receive instructor feedback, office hours, technical troubleshooting help, and project review support throughout the training track."
+    },
+    {
+      "q": "Does UTrains provide internship placement support?",
+      "a": "UTrains offers career guidance, portfolio reviews, and job readiness support, while placement outcomes depend on each learner's background and performance."
+    },
+    {
+      "q": "What is the refund policy for paid training programs?",
+      "a": "The refund policy is determined by the enrollment terms, but most programs allow a cooling-off period before the course starts."
+    }
+  ]
+}

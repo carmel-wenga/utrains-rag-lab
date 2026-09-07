@@ -1,9 +1,9 @@
 from __future__ import annotations
 
-from openai import OpenAI
-from openai.types.responses import EasyInputMessageParam
+from langchain_core.messages import HumanMessage, SystemMessage
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 
-import streamlit as st
+from src.config import settings
 
 SYSTEM_PROMPT = """You are a helpful support assistant for Utrains training programs.
 Answer the user's question using only the context provided below.
@@ -19,48 +19,46 @@ Context:
 {context}
 """
 
-def create_openai_client() -> OpenAI:
-    """Create and return an OpenAI client using the API key from Streamlit secrets."""
-    return OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+def create_embedding_model() -> OpenAIEmbeddings:
+    """Create the LangChain embedding model configured for this project."""
+    return OpenAIEmbeddings(
+        api_key=settings.OPENAI_API_KEY,
+        model=settings.EMBEDDING_MODEL,
+    )
 
 
-def get_embedding(text: str, client:OpenAI | None = None) -> list[float]:
-    """Generate an embedding for a single input string using the configured OpenAI model."""
-    active_client = client or create_openai_client()
+def create_chat_model(llm_model: str | None = None) -> ChatOpenAI:
+    """Create the LangChain chat model configured for this project."""
+    return ChatOpenAI(
+        api_key=settings.OPENAI_API_KEY,
+        model=llm_model or settings.LLM_MODEL,
+    )
+
+
+def get_embedding(text: str, embedding_model: OpenAIEmbeddings | None = None) -> list[float]:
+    """Generate an embedding for a single input string using the configured model."""
+    active_model = embedding_model or create_embedding_model()
     print(f"[EMBEDDINGS] Get Embeddings For: {text}")
-    response = active_client.embeddings.create(model=st.secrets["EMBEDDING_MODEL"], input=text)
-    return response.data[0].embedding
+    return active_model.embed_query(text)
 
 
 def call_llm(
         user_question: str,
         context_chunks: list[dict],
-        llm_model: str,
-        client:OpenAI | None = None
+        chat_model: ChatOpenAI | None = None,
     ) -> str:
     """Generate a grounded answer using the retrieved context chunks."""
 
     # Prepare the retrieved Q&A records as context
     context = "\n\n---\n\n".join([f"Q: {chunk['question']}\nA: {chunk['answer']}" for chunk in context_chunks])
 
-    # create openai client if None
-    active_client = client or create_openai_client()
+    active_chat_model = chat_model or create_chat_model()
 
-    # ask the LLM to answer the question.
-    messages: list[EasyInputMessageParam] = [
-        {
-            "role": "system",
-            "content": SYSTEM_PROMPT.format(context=context),
-        },
-        {
-            "role": "user",
-            "content": user_question,
-        },
+    messages = [
+        SystemMessage(content=SYSTEM_PROMPT.format(context=context)),
+        HumanMessage(content=user_question),
     ]
 
-    response = active_client.responses.create(
-        model=llm_model,
-        input=messages,
-    )
+    response = active_chat_model.invoke(messages)
 
-    return response.output_text
+    return response.text

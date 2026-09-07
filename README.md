@@ -7,7 +7,7 @@ and ask an LLM to answer using only the retrieved context.
 ## Project goals
 
 - Store support questions and answers in Elasticsearch.
-- Generate embeddings for the question text with OpenAI.
+- Generate embeddings for the question text with LangChain's OpenAI integration.
 - Search using either full-text search or vector similarity.
 - Pass the retrieved context to an LLM to produce a grounded answer.
 - Run the whole system locally with Docker Compose.
@@ -57,7 +57,7 @@ uv sync
 
 ### 2. Configure the project secrets
 
-Create a local secrets file at `.streamlit/secrets.toml` with your OpenAI API key and Elasticsearch connection details:
+Create a local secrets file at `.streamlit/secrets.toml` with your OpenAI API key and Elasticsearch connection details used by the LangChain OpenAI integration:
 
 ```toml
 OPENAI_API_KEY = "your_openai_api_key_here"
@@ -86,7 +86,7 @@ If you already have Elasticsearch running locally, make sure it is available at 
 
 ### 4. Index the dataset
 
-The offline indexing script loads a dataset, embeds each question, and stores the results in Elasticsearch.
+The offline indexing script loads a dataset, embeds each question through `langchain-openai`, and stores the results in Elasticsearch.
 
 Use the dataset file you want to index. For the sample source dataset in this repository:
 
@@ -140,7 +140,7 @@ This is the easiest setup for a classroom or local demo environment, and the app
 2. The app chooses either full-text or vector search.
 3. Elasticsearch retrieves the most relevant Q&A chunks.
 4. Those chunks are added to the prompt as context.
-5. The OpenAI model answers using only the context it has received.
+5. The LangChain chat model backed by OpenAI answers using only the context it has received.
 6. The UI displays the response and the retrieved context for transparency.
 
 ## Troubleshooting

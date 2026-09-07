@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import streamlit as st
 
-from src.llm_client import create_openai_client, call_llm
+from src.llm_client import create_chat_model, create_embedding_model, call_llm
 from src.rag import vector_search
 
 
@@ -19,14 +19,11 @@ def main() -> None:
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = []
 
-    if "openai_client" not in st.session_state:
-        # Init and store llm interaction and session to the streamlit session
-        openai_client = create_openai_client()
-        if openai_client:
-            st.session_state.openai_client = openai_client
-        else:
-            st.error("Failed to initialize OpenAI client. Please check your API key.")
-            st.stop()
+    if "chat_model" not in st.session_state:
+        st.session_state.chat_model = create_chat_model()
+
+    if "embedding_model" not in st.session_state:
+        st.session_state.embedding_model = create_embedding_model()
 
     for item in st.session_state.chat_history:
         if item["role"] == "user":
@@ -57,32 +54,35 @@ def main() -> None:
 
         with st.spinner("Executing…"):
             # 2. search relevant context from the indexed Q&A data using the selected search mode
-            retrieved_chunks = vector_search(str(user_question), top_k=3)
+            retrieved_chunks = vector_search(
+                str(user_question),
+                top_k=3,
+                embedding_model=st.session_state.embedding_model,
+            )
 
-            # 3. Use the retrieved context to call the OpenAI. If the context is empty, return a message indicating that
+            # 3. Use the retrieved context to call the LLM. If the context is empty, return a message indicating that
             # the answer cannot be provided.
             if retrieved_chunks:
-                answer = call_llm(
+                answer_text = call_llm(
                     user_question=str(user_question), # User Prompt
                     context_chunks=retrieved_chunks,  # The retrieved context
-                    llm_model=st.secrets["LLM_MODEL"],
-                    client=st.session_state.openai_client
+                    chat_model=st.session_state.chat_model,
                 )
             else:
-                answer = "I couldn't find enough context in the indexed Q&A data to answer that question confidently."
+                answer_text = "I couldn't find enough context in the indexed Q&A data to answer that question confidently."
 
-        answer = {
+        assistant_message = {
             "role": "assistant",
-            "content": answer,
+            "content": answer_text,
             "context": retrieved_chunks,
         }
-        st.session_state.chat_history.append(answer)
+        st.session_state.chat_history.append(assistant_message)
 
         with st.chat_message("assistant"):
-            st.markdown(answer["content"])
-            if answer.get("context"):
+            st.markdown(answer_text)
+            if retrieved_chunks:
                 with st.expander("Show retrieved context", expanded=False):
-                    for index, result in enumerate(answer["context"], start=1):
+                    for index, result in enumerate(retrieved_chunks, start=1):
                         st.markdown(f"**Result {index}**")
                         st.write(f"Question: {result['question']}")
                         st.write(f"Answer: {result['answer']}")

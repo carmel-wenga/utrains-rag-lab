@@ -3,13 +3,7 @@ from __future__ import annotations
 import streamlit as st
 
 from src.llm_client import create_openai_client, call_llm
-from src.rag import search
-
-
-def _normalize_search_mode(label: str) -> str:
-    if label == "Vector Search (Embeddings)":
-        return "vector"
-    return "full_text"
+from src.rag import vector_search
 
 
 def main() -> None:
@@ -21,34 +15,6 @@ def main() -> None:
 
     st.title("Utrains Support Chatbot")
     st.caption("Ask questions about training programs, support, schedules, and platform access.")
-
-    # Sidebar
-    with st.sidebar:
-        st.title("Support Assistant")
-        st.markdown("Powered by **OpenAI**")
-
-        openai_api_key = st.secrets["OPENAI_API_KEY"]
-        st.markdown(f"OpenAI key loaded: {'**YES**' if openai_api_key else '**NO**'}")
-        st.divider()
-
-        # display Elasticsearch Instance
-        elasticsearch_host = st.secrets["ELASTICSEARCH_HOST"]
-        st.markdown("Vector Database Instance")
-        st.markdown(f"Elasticsearch: {elasticsearch_host}")
-
-        st.divider()
-        llm_model_name = st.radio(
-            "Choose LLM Model",
-            ["gpt-4o-mini", "gpt-4o"],
-            index=0,
-        )
-
-        st.divider()
-        search_mode_label = st.radio(
-            "Search Mode",
-            ["Vector Search", "Full-Text Search"],
-            index=0,
-        )
 
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = []
@@ -82,7 +48,6 @@ def main() -> None:
     user_question = st.chat_input("Ask a question about a Utrains training program")
 
     if user_question:
-        mode = _normalize_search_mode(search_mode_label)
 
         # add user question to the chat history and display on the UI
         st.session_state.chat_history.append({"role": "user", "content": user_question})
@@ -92,7 +57,7 @@ def main() -> None:
 
         with st.spinner("Executing…"):
             # 2. search relevant context from the indexed Q&A data using the selected search mode
-            retrieved_chunks = search(str(user_question), mode=mode, top_k=3)
+            retrieved_chunks = vector_search(str(user_question), top_k=3)
 
             # 3. Use the retrieved context to call the OpenAI. If the context is empty, return a message indicating that
             # the answer cannot be provided.
@@ -100,7 +65,7 @@ def main() -> None:
                 answer = call_llm(
                     user_question=str(user_question), # User Prompt
                     context_chunks=retrieved_chunks,  # The retrieved context
-                    llm_model=llm_model_name,
+                    llm_model=st.secrets["LLM_MODEL"],
                     client=st.session_state.openai_client
                 )
             else:
